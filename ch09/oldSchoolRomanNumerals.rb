@@ -9,3 +9,6 @@ def romanize number
     end
     return romanNumeral
 end
+
+puts 'number to romanize:'
+puts romanize gets.chomp.to_i

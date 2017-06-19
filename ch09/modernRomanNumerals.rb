@@ -13,3 +13,6 @@ def romanize number
     romanNumeral = romanNumeral.gsub('XXXX', 'XL')
     return romanNumeral
 end
+
+puts 'number to romanize:'
+puts romanize gets.chomp.to_i
