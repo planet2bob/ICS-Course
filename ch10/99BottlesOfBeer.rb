@@ -64,7 +64,7 @@ end
 
 i = 99
 while i != 1
-    puts english_number(i) + " bottles of beer on the wall, " + english_number(i) + " bottles of beer."
+    puts english_number(i)[0].chr.upcase + english_number(i)[1..-1] + " bottles of beer on the wall, " + english_number(i) + " bottles of beer."
     i = i - 1
     if i == 1
         puts "take one down and pass it around, " + english_number(i) + " bottle of beer on the wall."
