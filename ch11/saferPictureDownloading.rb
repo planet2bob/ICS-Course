@@ -15,9 +15,15 @@ pic_names.each do |name|
     end
     if File.exist?(new_name)
         print '!'
+        puts "override file #{batch_name}#{pic_number}.jpg ? (y/n)"
+        if gets.chomp == "y"
+            File.rename name, new_name
+            pic_number = pic_number + 1
+        end
     else
         File.rename name, new_name
         pic_number = pic_number + 1
+    end
 end
 
 puts
